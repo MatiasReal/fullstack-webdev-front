@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parador Caribe</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <h1>¡Bienvenidos al balneario Parador Caribe!</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro" class="intro">
+            <div class="container">
+                <p>Disfruta de una experiencia inolvidable con nuestros servicios de alquiler de productos de playa.</p>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2>Menú</h2>
+                <p>En Parador Caribe, además de nuestros servicios de alquiler, ofrecemos un menú variado con opciones para todos los gustos. Disfruta de bebidas refrescantes, snacks y platos caribeños mientras te relajas en la playa.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="products">
+                <h2>Productos disponibles</h2>
+                <div class="products" id="products">
+                    <ul class="product-list">
+                        <li>
+                            <a id='jetsky' href="" onclick="mostrarmensaje('jetsky')">JetSky</a>
+                            <img src="img/jetsky.jpg" alt="JetSky" height="200" width="300">
+                        </li>
+                        <li>
+                            <a id='cuatriciclo' href="" onclick="mostrarmensaje('cuatriciclo')">Cuatriciclos</a>
+                            <img src="img/Cuatriciclo.jpg" alt="Cuatriciclos" height="200" width="300">
+                        </li>
+                        <li>
+                            <a id='buceo' href="" onclick="mostrarmensaje('buceo')">Equipo de buceo</a>
+                            <img src="img/buceo.jpg" alt="Equipo de buceo" height="200" width="300">
+                        </li>
+                        <li>
+                            <a id='surf' href="" onclick="mostrarmensaje('surf')">Tablas de surf</a>
+                            <img src="img/surf.jpg" alt="Tablas de surf" height="200" width="300">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>¿Tienes alguna pregunta? Contáctanos en el parador o a través de nuestras redes sociales. ¡Estamos aquí para ayudarte!</p>
+                <div class="contact-info">
+                    <ul>
+                        <li><a href="">Instagram</a><img src="img/instagram.png" alt="instagram"></li>
+                        <li><a href="">Tik Tok</a><img src="img/tik-tok.png" alt="tik-tok"></li>
+                        <li><a href="">Facebook</a><img src="img/facebook.png" alt="facebook"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section>
+                <div class="articulo-extra">
+                    <aside>
+                        <img src="img/tropical-beach.jpg" alt="playa" height="300" width="500">
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Parador Caribe. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/req.js"></script>
+</body>
+</html>
