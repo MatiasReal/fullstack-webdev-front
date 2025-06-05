@@ -22,23 +22,26 @@ Este proyecto implementa un sistema de gestión de alquiler de productos de play
 ## Estructura del Proyecto
 ```
 fullstack-web-dev/
-├── server.js
-├── package.json
 ├── README.md
-├── app/
-│   ├── config/
-│   │   ├── app.js
-│   │   ├── database.js
-│   ├── controllers/
-│   │   ├── productosController.js
-│   │   ├── reservaController.js
-│   ├── models/
-│   │   ├── productos.js
-│   │   ├── reserva.js
-│   ├── routes/
-│   │   ├── productoRoutes.js
-│   │   ├── reservaRoutes.js
-│   ├── utilities/
-│   │   ├── turnos.js
-│   ├── views/
+├── index.html
+├── scripts/
+│   ├── index.js
+|   ├── req.js
+├── scripts/
+│   ├── index.js
+|   ├── req.js
+├── img/
+│   ├── buceo.jpg
+|   ├── Cuatriciclo.jpg
+│   ├── facebook.png
+|   ├── instagram.png
+│   ├── jetsky.jpg
+|   ├── menu.jpg
+│   ├── playaicon.png
+|   ├── surf.jpg
+│   ├── tik-tok.png
+|   ├── tropical-beach.jpg
+├── assets/css
+│   ├── styles.css
+
 ```
