@@ -1,40 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
-    font-family: "IBM Plex Serif", serif;
-    font-weight: 200;
-    font-style: normal;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+  background-size: cover;
+  color: white; 
+  font-family: 'Poppins', sans-serif;
 }
+
 h1 {
     text-align: center;
     font-size: 2.5em;
-    color: #333;
+    color: #ffffff;
     margin: 100px 10px 30px 10px;
     padding: 10px;
 }
 
+.menu-img{
+    display: block;
+    margin: 0 auto;
+    width: 500px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5%; /* Hace que la imagen sea circular */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
 .navbar {
-    display: flex;
-    justify-content: center;
-    position: fixed; 
-    width: 100%;
-    background-color: #333;
-    padding: 10px 0;
-    box-shadow:0px 2px 5px;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100vw; /* Se asegura de ocupar todo el ancho de la pantalla */
+    background-color: #333;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 25px 0;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 0;
+    padding: 0;
+    gap: 50px; /* Espaciado entre elementos */
 }
 
 .navbar ul li {
-    padding: 5px;
+    padding: 0;
     font-size: 18px;
 }
 
@@ -42,7 +55,8 @@ h1 {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 100px;
+    padding: 10px 20px; /* Mejora la zona clickeable */
+    transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
@@ -54,7 +68,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     padding: 5px;
-    box-shadow: #333 0px 2px 5px;
+    box-shadow: #e2dcdb 0px 2px 5px;
 }
 
 .products ul {
@@ -66,7 +80,7 @@ h1 {
 
 .products li a {
     text-decoration: none; 
-    color: black; 
+    color: rgb(255, 255, 255); 
     padding: 10px 15px; 
     border: 1px solid #ccc; 
     border-radius: 5px; 
@@ -114,14 +128,14 @@ h1 {
 .container h2{
     text-align: center;
     font-size: 2em;
-    color: #333;
+    color: #f1f1f1;
     margin: 20px 10px 10px 10px;
     padding: 10px;
 }
 .container p {
     text-align: center;
     font-size: 1.2em;
-    color: #666;
+    color: #f1eaea;
     margin: 10px 10px 20px 10px;
     padding: 10px;
 }
@@ -148,7 +162,7 @@ h1 {
     flex-direction: row;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 251, 251);
     font-weight: bold;
     padding: 10px;
     transition: background-color 0.3s ease, color 0.3s ease; 
@@ -160,14 +174,14 @@ h1 {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 375px) {
     .navbar{
         position: fixed;
+        width: 121vw;
     }
     .navbar ul {
         flex-wrap: wrap;
         width: 100%;
-        padding: 0 4em 0;
     }
     .navbar ul li a{
         display: inline;
@@ -179,7 +193,7 @@ h1 {
     }
     .products {
         flex-direction: column;
-        margin: 20px;
+        gap: 20px;
     }
     .product-list {
         flex-direction: column;
@@ -201,7 +215,41 @@ h1 {
         margin: 10px;
         padding: 10px;
     }
+    .menu-img {
+        width: 100%; 
+        height: auto;
+    }
 }
+
+@media screen and (max-width: 430px) {
+    .navbar ul li a {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+    .products {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+    .articulo-extra {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-img {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .navbar ul li a {

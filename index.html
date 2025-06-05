@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parador Caribe</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="img/playaIcon.png">
 
 </head>
 <body>
@@ -23,38 +24,38 @@
     </header>
 
     <main>
+
         <section id="intro" class="intro">
             <div class="container">
                 <p>Disfruta de una experiencia inolvidable con nuestros servicios de alquiler de productos de playa.</p>
             </div>
-        </section>
-
+        </section> 
         <section id="menu" class="menu">
             <div class="container">
-                <h2>Menú</h2>
-                <p>En Parador Caribe, además de nuestros servicios de alquiler, ofrecemos un menú variado con opciones para todos los gustos. Disfruta de bebidas refrescantes, snacks y platos caribeños mientras te relajas en la playa.</p>
+            <h2>Menú</h2>
+            <p>En Parador Caribe, además de nuestros servicios de alquiler, ofrecemos un menú variado con opciones para todos los gustos. Disfruta de bebidas refrescantes, snacks y platos caribeños mientras te relajas en la playa.</p>
+            <img class='menu-img' src="img/menu.jpg" alt="Menú del Parador Caribe" height="500" width="500">
             </div>
         </section>
-
         <div class="container">
             <section id="products">
                 <h2>Productos disponibles</h2>
                 <div class="products" id="products">
                     <ul class="product-list">
                         <li>
-                            <a id='jetsky' href="" onclick="mostrarmensaje('jetsky')">JetSky</a>
+                            <a id='jetsky' href="">JetSky</a>
                             <img src="img/jetsky.jpg" alt="JetSky" height="200" width="300">
                         </li>
                         <li>
-                            <a id='cuatriciclo' href="" onclick="mostrarmensaje('cuatriciclo')">Cuatriciclos</a>
+                            <a id='cuatriciclo' href="">Cuatriciclos</a>
                             <img src="img/Cuatriciclo.jpg" alt="Cuatriciclos" height="200" width="300">
                         </li>
                         <li>
-                            <a id='buceo' href="" onclick="mostrarmensaje('buceo')">Equipo de buceo</a>
+                            <a id='buceo' href="">Equipo de buceo</a>
                             <img src="img/buceo.jpg" alt="Equipo de buceo" height="200" width="300">
                         </li>
                         <li>
-                            <a id='surf' href="" onclick="mostrarmensaje('surf')">Tablas de surf</a>
+                            <a id='surf' href="">Tablas de surf</a>
                             <img src="img/surf.jpg" alt="Tablas de surf" height="200" width="300">
                         </li>
                     </ul>
@@ -85,6 +86,12 @@
                 </div>
             </section>
         </div>
+
+        <section id="cancelar-reserva" style="text-align: center; margin: 50px 0;">
+        <h2>¿Querés cancelar tu reserva?</h2>
+        <input type="text" id="codigoCancelar" placeholder="Ingresá tu código de cancelación">
+        <button id="btnCancelarReserva">Cancelar reserva</button>
+        </section>
     </main>
     
 
@@ -94,7 +101,8 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/req.js"></script>
+    <script type="module" src="scripts/index.js"></script>
+    <!--<script src="scripts/req.js"></script> -->
 </body>
 </html>
+
