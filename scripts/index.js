@@ -224,8 +224,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 seguroTormenta,
                 tokenReserva
             });
-
-            // Opcional: copiar token
+            
             await navigator.clipboard.writeText(tokenReserva);
             alert(`${mensaje}\nCódigo para cancelar: ${tokenReserva}\n(Se copió al portapapeles)`);
 
